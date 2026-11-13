@@ -1,0 +1,91 @@
+
+/* General website settings */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* TITLE SCREEN */
+
+.title-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-screen h1 {
+    font-size: 48px;
+}
+
+.goose-image {
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+}
+
+.goose-image:hover {
+    transform: scale(1.05);
+}
+
+/* DOCUMENTS PAGE */
+
+.documents-page {
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.documents-page h1 {
+    text-align: center;
+}
+
+/* TAB NAVIGATION */
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 30px 0;
+}
+
+.tab {
+    padding: 12px 20px;
+    border: 1px solid #888;
+    cursor: pointer;
+    background: #eeeeee;
+    font-size: 15px;
+}
+
+.tab.active {
+    background: #444444;
+    color: white;
+}
+
+/* DOCUMENT CONTENT */
+
+.document-content {
+    display: none;
+    padding: 25px;
+    min-height: 400px;
+    border: 1px solid #888;
+}
+
+.document-content.active {
+    display: block;
+}
+
+/* BACK LINK */
+
+.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+}

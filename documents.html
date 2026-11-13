@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Documents</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="documents-page">
+
+        <h1>GAME DOCUMENTATION</h1>
+
+        <!-- Navigation tabs -->
+        <nav class="tab-container">
+
+            <button class="tab active" onclick="openTab(event, 'doc1')">Document 1</button>
+            <button class="tab" onclick="openTab(event, 'doc2')">Document 2</button>
+            <button class="tab" onclick="openTab(event, 'doc3')">Document 3</button>
+            <button class="tab" onclick="openTab(event, 'doc4')">Document 4</button>
+            <button class="tab" onclick="openTab(event, 'doc5')">Document 5</button>
+            <button class="tab" onclick="openTab(event, 'doc6')">Document 6</button>
+            <button class="tab" onclick="openTab(event, 'doc7')">Document 7</button>
+
+        </nav>
+
+        <!-- Document contents -->
+
+        <section id="doc1" class="document-content active">
+            <h2>Document 1 Title</h2>
+            <p>Insert your first document here.</p>
+        </section>
+
+        <section id="doc2" class="document-content">
+            <h2>Document 2 Title</h2>
+            <p>Insert your second document here.</p>
+        </section>
+
+        <section id="doc3" class="document-content">
+            <h2>Document 3 Title</h2>
+            <p>Insert your third document here.</p>
+        </section>
+
+        <section id="doc4" class="document-content">
+            <h2>Document 4 Title</h2>
+            <p>Insert your fourth document here.</p>
+        </section>
+
+        <section id="doc5" class="document-content">
+            <h2>Document 5 Title</h2>
+            <p>Insert your fifth document here.</p>
+        </section>
+
+        <section id="doc6" class="document-content">
+            <h2>Document 6 Title</h2>
+            <p>Insert your sixth document here.</p>
+        </section>
+
+        <section id="doc7" class="document-content">
+            <h2>Document 7 Title</h2>
+            <p>Insert your seventh document here.</p>
+        </section>
+
+        <a href="index.html" class="back-link">Back to title screen</a>
+
+    </main>
+
+    <script>
+        function openTab(event, documentId) {
+
+            // Hide all documents
+            const documents = document.querySelectorAll(
+                ".document-content"
+            );
+
+            documents.forEach(doc => {
+                doc.classList.remove("active");
+            });
+
+            // Remove active state from all tabs
+            const tabs = document.querySelectorAll(".tab");
+
+            tabs.forEach(tab => {
+                tab.classList.remove("active");
+            });
+
+            // Show selected document
+            document.getElementById(documentId)
+                .classList.add("active");
+
+            // Highlight selected tab
+            event.currentTarget.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>
