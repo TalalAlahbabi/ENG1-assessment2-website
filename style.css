@@ -165,9 +165,47 @@ body {
     max-width: 100%;
     height: auto;
     border: 1px solid #ccc;
-    overflow-x: auto;
 }
 
 .gantt-notes {
     margin: 10px 0 0;
+}
+
+
+/* UML DIAGRAMS (Architecture) */
+
+.uml-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px 0 30px;
+}
+
+.uml-figure {
+    margin: 0 0 20px;
+    padding: 15px;
+    border: 1px solid #888;
+}
+
+.uml-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.uml-image {
+    display: block;
+    max-width: 100%;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.uml-notes {
+    margin: 10px 0 0;
+}
+
+#doc2 h3,
+#doc3 h3 {
+    margin-top: 30px;
 }
