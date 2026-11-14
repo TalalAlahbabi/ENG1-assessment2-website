@@ -1,4 +1,3 @@
-
 /* General website settings */
 
 * {
@@ -33,6 +32,57 @@ body {
 
 .goose-image:hover {
     transform: scale(1.05);
+}
+
+/* TITLE SCREEN LINKS */
+
+.link-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CONTROLS PAGE */
+
+.controls-page {
+    min-height: 100vh;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.controls-page h1 {
+    text-align: center;
+}
+
+.info-block {
+    margin: 25px 0;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+.controls-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.controls-table th,
+.controls-table td {
+    border: 1px solid #888;
+    padding: 10px;
+    text-align: left;
+}
+
+.controls-table th {
+    background: #eeeeee;
 }
 
 /* DOCUMENTS PAGE */
