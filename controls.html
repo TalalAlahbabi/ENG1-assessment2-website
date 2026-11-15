@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Play - Goose Patrol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,13 +37,16 @@
 
         <section class="info-block">
             <h2>Mechanics</h2>
-            <p>Player starts with 100 food, with each bite takig 10
-                Airhorn scared away geese within 300 units and has a 2 sec duration
-                Goose disguise make the geese ignore the player for a 10 second duration
-
-                1st hidden event: Long Boi, is faster than regular geese and is not affected by air horn or geese disguise
-                2nd hidden event: Fox, targets the closest goose or Long Boi and disperses them
-            </p>
+            <ul class="mechanics-list">
+                <li>You start with <strong>100 food</strong>. Every bite takes <strong>10</strong>.</li>
+                <li><strong>Airhorn (E):</strong> scares away geese within 300 units for 2 seconds.</li>
+                <li><strong>Goose disguise (Q):</strong> geese ignore you for 10 seconds.</li>
+            </ul>
+            <h3 class="hidden-title">Hidden events</h3>
+            <ul class="mechanics-list hidden-events">
+                <li><strong>Long Boi:</strong> faster than regular geese, and ignores both the airhorn and the disguise.</li>
+                <li><strong>Fox:</strong> hunts the closest goose or Long Boi and sends it running.</li>
+            </ul>
         </section>
 
         <a href="index.html" class="back-link">Back to title screen</a>
