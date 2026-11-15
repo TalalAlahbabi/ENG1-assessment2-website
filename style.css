@@ -172,7 +172,23 @@ a:focus-visible, .tab:focus-visible { outline: 4px solid var(--coral); outline-o
 .mechanics-list li:nth-child(2)::before { background: var(--coral); }
 .mechanics-list li:nth-child(3)::before { background: var(--sky); }
 
-.hidden-title { margin: 26px 0 0; color: var(--ink-soft); }
+.info-block h2 + *, .info-block h3 + * { margin-top: 16px; }
+
+/* any heading that follows a list gets space above it so it doesn't stick to the section before */
+.info-block ul + h2,
+.info-block ul + h3,
+.info-block p + h2,
+.info-block p + h3,
+.info-block .hidden-title { margin-top: 40px; }
+
+.info-block h3 {
+    display: inline-block;
+    background: var(--peach);
+    border: 4px solid var(--border);
+    padding: 6px 16px;
+    box-shadow: var(--shadow-small);
+    font-size: 1.1rem;
+}
 .hidden-title::after { content: " ???"; }
 
 .hidden-events li {
@@ -187,9 +203,9 @@ a:focus-visible, .tab:focus-visible { outline: 4px solid var(--coral); outline-o
 
 .tab {
     font-family: var(--font-display);
-    font-size: 0.65rem;
+    font-size: 0.9rem;
     line-height: 1.5;
-    padding: 12px 16px;
+    padding: 16px 20px;
     color: var(--ink);
     background: var(--card);
     border: 4px solid var(--border);
@@ -242,9 +258,9 @@ a:focus-visible, .tab:focus-visible { outline: 4px solid var(--coral); outline-o
 .back-link {
     display: inline-block;
     margin-top: 30px;
-    padding: 12px 20px;
+    padding: 16px 26px;
     font-family: var(--font-display);
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-decoration: none;
     color: var(--ink);
     background: var(--sunny);
@@ -271,9 +287,10 @@ a:focus-visible, .tab:focus-visible { outline: 4px solid var(--coral); outline-o
 .gantt-date, .uml-title {
     display: inline-block;
     margin-bottom: 12px;
-    padding: 4px 12px;
+    padding: 8px 16px;
     font-family: var(--font-display);
-    font-size: 0.7rem;
+    font-size: 1rem;
+    line-height: 1.5;
     background: var(--grass);
     border: 3px solid var(--border);
 }
@@ -299,7 +316,7 @@ a:focus-visible, .tab:focus-visible { outline: 4px solid var(--coral); outline-o
     .info-block, .document-content { padding: 20px; }
     .sprite { width: 180px; }
     .link-row { gap: 30px; }
-    .tab { font-size: 0.55rem; padding: 10px; }
+    .tab { font-size: 0.7rem; padding: 12px; }
     .controls-table th, .controls-table td { padding: 8px; font-size: 1.2rem; }
 }
 
